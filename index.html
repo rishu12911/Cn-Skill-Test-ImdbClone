@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="imdb.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="home-btn-container" id="home-btn"><i class="fa-solid fa-house fa-2x"></i></div>
+      <form id="form-container" autocomplete="off">
+        <input type="text" id="input-field" placeholder="Search....">
+        <div id="autocomplete-list">
+          <div id="list-movie-names">
+            
+          </div>
+        </div>
+        <div id="search"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div>
+      </form>
+      <div class="fav-btn-container">
+        <a href="fav.html"><i class="fa-solid fa-heart fa-2x"></i></a>
+        <div id="counter">0</div>
+      </div>
+    </nav>
+    <main>
+      <div id="movie-info-container">
+            
+      </div>
+    </main>
+    <script src="imdb.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: aliceblue;
+}
+body{
+    background-image: url(img/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: black;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 10px 5px #48abe0;
+}
+#fav-mov-poster{
+    width: 200px;
+    height: 200px;
+}
+#favmovlist{
+    overflow-x: hidden;
+    display: flex;
+    width: 95vw;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#favmovlist div{
+    margin: 5px;
+}
+.list{
+    position: relative;
+    width: 25vw;
+    height: 50vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.poster{
+    width: 80%;
+    height: 80%;
+}
+.poster img{
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+.name{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#button{
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    cursor: pointer;
+}
+@media screen and (max-width:500px){
+    .list{
+        width: 55%;
+    }
+    
+}

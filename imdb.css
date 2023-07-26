@@ -1,0 +1,316 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+nav {
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 10px 5px #48abe0;
+}
+
+.home-btn-container {
+    position: absolute;
+    left: 5%;
+    border-radius: 2rem;
+    ;
+    font-size: larger;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#form-container {
+    position: relative;
+    left: 27%;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#input-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    appearance: none;
+    outline: none;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 12px;
+    border: none;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px #48abe0;
+}
+
+#autocomplete-list {
+    position: absolute;
+    height: auto;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    z-index: 1;
+}
+
+i {
+    color: aliceblue;
+}
+
+.suggestions {
+    border-bottom: 2px solid white;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    color: aliceblue;
+}
+
+#list-movie-names {
+    width: 100%;
+    height: auto;
+}
+
+.fav-btn-container {
+    position: absolute;
+    right: 10%;
+    border-radius: 2rem;
+    ;
+    cursor: pointer;
+
+}
+
+#counter {
+    position: absolute;
+    top: -10%;
+    right: -50%;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#search {
+    position: absolute;
+    right: 0%;
+    color: aliceblue;
+}
+
+main {
+    width: 100vw;
+    height: 85vh;
+    background-image: url(img/alex-litvin-MAYsdoYpGuk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-heart {
+    color: rgb(223, 223, 238);
+}
+
+.chngcolor {
+    color: red;
+}
+
+.name {
+    font: bold;
+    font-size: 2rem;
+}
+
+.Error {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: black;
+}
+
+#movie-info-container {
+    padding: 1rem;
+    width: 60%;
+    position: relative;
+}
+
+.movie-poster {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 10%;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.year {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.rating {
+    position: absolute;
+    background-color: rgb(204, 204, 34);
+    left: 62%;
+    top: 18%;
+    padding: .5rem;
+    border-radius: 2rem;
+}
+
+.released-date {
+    position: absolute;
+    left: 78%;
+    top: 20%;
+
+}
+
+.writer {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+}
+
+.actor {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+}
+
+.language {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    padding: .5rem;
+    background-color: #90a6b3;
+    border-radius: 2rem;
+}
+
+.plot {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 45%;
+    height: auto;
+    background-color: #71b8ae;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.plot span {
+    color: rgb(75, 68, 68);
+    font-weight: bold;
+    font-size: medium;
+}
+
+#movie-info-container div {
+    color: black;
+    font-weight: bolder;
+}
+
+#fav-add-btn {
+    position: absolute;
+    right: 0%;
+    top: 1%;
+    padding: 10px;
+    border-radius: 2rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    #movie-info-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #movie-info-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .movie-poster {
+        width: 50%;
+        height: 30%;
+        top: 5%;
+        left: 25%;
+    }
+
+    .name {
+        left: 40%;
+        top: 37%;
+    }
+
+    .year {
+        left: 5%;
+        top: 44%;
+    }
+
+    .rating {
+        left: 5%;
+        top: 48%;
+    }
+
+    .released-date {
+        position: absolute;
+        left: 45%;
+        top: 44%;
+
+    }
+
+    .writer {
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+
+    .actor {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+    }
+
+    .language {
+        position: absolute;
+        top: 67%;
+        left: 5%;
+    }
+
+    .plot {
+        top: 75%;
+        left: 5%;
+        width: 80%;
+        height: auto;
+    }
+
+    #fav-add-btn {
+        top: 5%;
+    }
+}
